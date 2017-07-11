@@ -1,0 +1,273 @@
+/* 
+Make sure you import files in order (from top to bottom), based on what other files will need.
+  
+For example, my variables file may need a font I imported, so typography is imported first... 
+My mixins file probably needs a variable and possibly a font I imported, so my variables and typography files are imported before my mixins file...
+My globals file probably needs something from all three of the previously imported files, etc.
+*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  /* Set to border-box to keep consistentcy across width/positioning adjustments */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: flex;
+  flex-flow: row wrap; }
+
+body {
+  line-height: 1;
+  /* Set to 62.5% so that 1rem = 10pt font */
+  font-size: 62.5%;
+  font: inherent;
+  line-height: 23px; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  position: relative;
+  text-decoration: none; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  width: 100%; }
+
+/* Use this to style your elements and build them in your elements.html file. When you're finished building and styling, you should be able to preview what they look and behave like, responsively. After that you can copy/paste the elements where you need them and all that needs to change is their positioning within the containing divs */
+.section-title {
+  color: #A0B0C4;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  font-size: 2.4rem;
+  line-height: normal;
+  padding: 0 0 10px;
+  text-align: center;
+  width: 100%; }
+
+.section-description {
+  align-items: center;
+  text-align: center;
+  width: 60%; }
+
+section {
+  padding: 40px 0;
+  width: 100%; }
+
+.container {
+  color: #3d3d3d;
+  display: flex;
+  flex-flow: row wrap;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 1rem; }
+
+.body-container {
+  padding: 40px 75px; }
+
+.hero {
+  background: url(assets/the-face.jpg) no-repeat center 25%/cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  flex-flow: column;
+  height: 600px;
+  padding: 30px 75px; }
+  .hero nav {
+    justify-content: flex-end;
+    width: 100%; }
+  .hero .hero-nav-link--events, .hero .hero-nav-link--get-book {
+    color: #A0B0C4;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    text-decoration: none; }
+  .hero .hero-nav-link--events {
+    padding: 0 40px 0 0; }
+  .hero .section-title {
+    font-size: 3.2rem;
+    padding: 80px 0 0; }
+
+.toc--book-preview {
+  width: 60%; }
+
+.toc--list-section {
+  width: 40%; }
+  .toc--list-section .section-title {
+    text-align: left; }
+
+.chapter-download-icon {
+  float: right; }
+  .chapter-download-icon.not-available {
+    opacity: .2; }
+
+.influencers {
+  justify-content: center;
+  padding: 40px 0 0; }
+  .influencers .influencer-container {
+    justify-content: space-between;
+    width: 100%; }
+  .influencers .influencer {
+    justify-content: space-around;
+    width: 25%; }
+  .influencers .influencer-container--inner {
+    margin: 0 auto;
+    padding: 0 0 25px;
+    width: 120px; }
+  .influencers .influencer--image {
+    background: url(assets/the-face.jpg) no-repeat center 25%/cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-radius: 120px;
+    height: 120px;
+    width: 120px; }
+  .influencers .influencer-name {
+    color: #3d3d3d;
+    font-weight: 600px;
+    text-align: center; }
+  .influencers .influencer-title {
+    color: #9B9B9B;
+    font-size: .5rem;
+    font-weight: 300;
+    line-height: 17px;
+    text-align: center;
+    text-transform: uppercase; }
+
+.events {
+  justify-content: center; }
+  .events .col.event-date {
+    width: 20%; }
+  .events .col.event-details {
+    width: 60%; }
+  .events .col.event-tix {
+    width: 20%; }
+  .events .event-meta-titles {
+    color: #A0B0C4;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    padding: 0 0 20px; }
+  .events .event {
+    padding: 0 0 20px; }
+  .events .event.free {
+    background: #D1EFF9;
+    margin: 0 0 20px;
+    padding: 30px 0 30px; }
+  .events .event-title {
+    font-weight: 600; }
+  .events .event-location {
+    color: #A0B0C4;
+    font-size: .6rem;
+    line-height: 17px;
+    padding: 0 0 7px;
+    text-transform: uppercase;
+    width: 80%; }
+  .events .event-description {
+    width: 80%; }
+  .events .event-link {
+    color: #3d3d3d; }
+    .events .event-link:after {
+      background: url(assets/link-highlight.svg);
+      content: '';
+      height: 5px;
+      width: 64px;
+      position: absolute;
+      top: 19px;
+      left: -6px; }
+
+.connect-container {
+  flex-flow: row wrap;
+  font-weight: 600;
+  justify-content: space-between;
+  width: 60%; }
+
+.connect-button {
+  color: #3d3d3d; }
+  .connect-button:after {
+    background: url(assets/link-highlight.svg);
+    content: '';
+    height: 5px;
+    width: 64px;
+    position: absolute;
+    top: 19px;
+    left: -4px; }
+
+footer.row {
+  background: #A0B0C4;
+  color: #FFF;
+  font-weight: 400;
+  height: 80px;
+  justify-content: space-between;
+  padding: 0 75px; }
+
+.copyright {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  padding: 28px 0; }
+
+.social-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 21px 0;
+  width: 100px; }
+
+.social-link {
+  -webkit-box-shadow: 1px 1px 8px rgba(51, 84, 124, 0.4);
+  -moz-box-shadow: 1px 1px 8px rgba(51, 84, 124, 0.4);
+  box-shadow: 1px 1px 8px rgba(51, 84, 124, 0.4);
+  border-radius: 50px;
+  display: inline-block;
+  height: 37px;
+  width: 37px; }
+
+.social-link#medium {
+  background: #fff url(assets/medium-logo.png) no-repeat 60% 65%/70%;
+  margin: 0 2% 0 0; }
+
+.social-link#twitter {
+  background: #fff url(assets/twitter-logo.png) no-repeat 60% 65%/70%; }
+
+/*# sourceMappingURL=styles.css.map */
