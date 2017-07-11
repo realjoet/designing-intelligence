@@ -1,7 +1,7 @@
-/* 
+/*
 Make sure you import files in order (from top to bottom), based on what other files will need.
-  
-For example, my variables file may need a font I imported, so typography is imported first... 
+
+For example, my variables file may need a font I imported, so typography is imported first...
 My mixins file probably needs a variable and possibly a font I imported, so my variables and typography files are imported before my mixins file...
 My globals file probably needs something from all three of the previously imported files, etc.
 */
@@ -39,7 +39,6 @@ footer, header, hgroup, menu, nav, section {
   flex-flow: row wrap; }
 
 body {
-  line-height: 1;
   /* Set to 62.5% so that 1rem = 10pt font */
   font-size: 62.5%;
   font: inherent;
@@ -269,5 +268,85 @@ footer.row {
 
 .social-link#twitter {
   background: #fff url(assets/twitter-logo.png) no-repeat 60% 65%/70%; }
+
+@media (max-width: 786px) {
+  /* Use this to style your elements and build them in your elements.html file. When you're finished building and styling, you should be able to preview what they look and behave like, responsively. After that you can copy/paste the elements where you need them and all that needs to change is their positioning within the containing divs */
+  .section-title {
+    color: #A0B0C4;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    font-size: 1.4rem;
+    line-height: normal;
+    padding: 0 0 10px;
+    text-align: center;
+    width: 100%; }
+
+  .section-description {
+    align-items: center;
+    text-align: center;
+    width: 100%; }
+
+  section {
+    padding: 40px 0;
+    width: 100%; }
+
+  .container {
+    font-size: .75rem; }
+
+  .body-container {
+    padding: 40px; }
+
+  .hero {
+    height: 500px;
+    padding: 30px 40px; }
+    .hero nav {
+      display: none; }
+    .hero .section-title {
+      font-size: 1.8rem;
+      padding: 80px 0 0; }
+
+  .toc {
+    flex-flow: column; }
+
+  .toc--book-preview {
+    margin: 0 0 20px;
+    width: 100%; }
+
+  .toc--list-section {
+    width: 100%; }
+
+  .influencers .influencer-container {
+    padding: 40px 0 20px; }
+  .influencers .influencer {
+    justify-content: space-around;
+    width: 50%; }
+
+  .events .col.event-date {
+    width: 100%; }
+  .events .col.event-details {
+    width: 100%; }
+  .events .col.event-tix {
+    margin: 12px 0 0;
+    width: 100%; }
+  .events .event-meta-titles {
+    display: none; }
+  .events .event {
+    flex-flow: column;
+    padding: 0 0 20px; }
+    .events .event + .event {
+      padding: 20px 0; }
+  .events .event.free {
+    padding: 30px 30px; }
+  .events .event-description {
+    width: 100%; }
+
+  .connect-container {
+    width: 100%; }
+
+  footer.row {
+    padding: 0 40px; }
+
+  .social-container {
+    width: 95px; } }
 
 /*# sourceMappingURL=styles.css.map */
