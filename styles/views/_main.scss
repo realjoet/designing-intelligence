@@ -1,5 +1,5 @@
 section {
-  padding: 40px 0;
+  padding: 40px 75px;
   width: 100%;
 }
 
@@ -11,53 +11,6 @@ section {
   font-weight: 300;
   font-size: 1rem;
 }
-
-.body-container {
-  padding: 40px 75px;
-}
-
-
-
-
-//! HERO _____________________________
-//! ____________________________________
-
-.hero {
-  // background: url(assets/the-face.jpg) no-repeat center 25% / 100%;
-  background: url(assets/the-face.jpg) no-repeat center 0% / cover;
-  @include background-cover;
-  flex-flow: column;
-  height: 650px;
-  padding: 30px 75px;
-
-  nav {
-    justify-content: flex-end;
-    width: 100%;
-  }
-
-  %hero-nav-link {
-    color: #354354;
-    font-family: $montserrat;
-    font-weight: 300;
-    text-decoration: none;
-  }
-
-  .hero-nav-link--events, .hero-nav-link--get-book {
-    @extend %hero-nav-link;
-  }
-
-  .hero-nav-link--events {
-    padding: 0 40px 0 0;
-  }
-
-  .section-title {
-    color: #687D84;
-    font-size: 2.8rem;
-    font-weight: 300;
-    text-transform: uppercase;
-  }
-}
-
 
 
 
@@ -116,6 +69,29 @@ section {
 
 
 
+//! ABOUT SECTION ______________________
+//! ____________________________________
+
+.about-section {
+  background: $gun-metal;
+  color: #fff;
+  padding: 80px 0;
+
+  .section-title {
+    color: #fff;
+    margin: 0 auto;
+    padding: 0 0 20px;
+    text-align: left;
+    width: 60%;
+  }
+
+  .book-description {
+    margin: 0 auto;
+    width: 60%;
+  }
+}
+
+
 
 
 //! INFLUENCERS ________________________
@@ -123,10 +99,10 @@ section {
 
 .influencers {
   justify-content: center;
-  padding: 40px 0 0;
 
   .influencer-container {
     justify-content: space-between;
+    padding: 40px 0;
     width: 100%;
   }
 
@@ -173,6 +149,10 @@ section {
 
 .events {
   justify-content: center;
+
+  .event-list {
+    padding: 40px 0;
+  }
 
   .col.event-date {
     width: 20%;
