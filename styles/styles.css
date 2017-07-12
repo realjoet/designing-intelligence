@@ -335,20 +335,6 @@ footer.row {
     .hero .section-title {
       font-size: 1.4rem; }
 
-  .about-section {
-    background: #A0B0C4;
-    color: #fff;
-    padding: 80px 40px; }
-    .about-section .section-title {
-      color: #fff;
-      margin: 0 auto;
-      padding: 0 0 20px;
-      text-align: left;
-      width: 100%; }
-    .about-section .book-description {
-      margin: 0 auto;
-      width: 100%; }
-
   .toc {
     flex-flow: column; }
 
@@ -367,18 +353,11 @@ footer.row {
     margin: 0 auto; }
 
   .about-section {
-    background: #A0B0C4;
-    color: #fff;
-    padding: 80px 0; }
+    padding: 60px 40px; }
     .about-section .section-title {
-      color: #fff;
-      margin: 0 auto;
-      padding: 0 0 20px;
-      text-align: left;
-      width: 60%; }
+      width: 100%; }
     .about-section .book-description {
-      margin: 0 auto;
-      width: 60%; }
+      width: 100%; }
 
   .influencers .influencer-container {
     padding: 40px 0 20px; }
