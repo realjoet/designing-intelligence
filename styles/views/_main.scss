@@ -24,10 +24,10 @@ section {
 
 .hero {
   // background: url(assets/the-face.jpg) no-repeat center 25% / 100%;
-  background: url(assets/the-face.jpg) no-repeat center 25% / cover;
+  background: url(assets/the-face.jpg) no-repeat center 0% / cover;
   @include background-cover;
   flex-flow: column;
-  height: 600px;
+  height: 650px;
   padding: 30px 75px;
 
   nav {
@@ -36,7 +36,7 @@ section {
   }
 
   %hero-nav-link {
-    color: $gun-metal;
+    color: #354354;
     font-family: $montserrat;
     font-weight: 300;
     text-decoration: none;
@@ -51,8 +51,10 @@ section {
   }
 
   .section-title {
-    font-size: 3.2rem;
-    padding: 80px 0 0;
+    color: #687D84;
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
   }
 }
 
@@ -67,15 +69,25 @@ section {
 }
 
 .toc--book-preview {
-  width: 60%;
+  width: 50%;
+
+  .cover-wrapper {
+    margin: 0 auto;
+    width: 400px
+  }
+
+  .book-cover {
+    width: 400px;
+  }
 }
 
 .toc--list-section {
-  width: 40%;
+  width: 50%;
 
   .section-title {
     text-align: left;
   }
+
 }
 
 .chapter-download-icon {

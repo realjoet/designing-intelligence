@@ -106,33 +106,40 @@ section {
   padding: 40px 75px; }
 
 .hero {
-  background: url(assets/the-face.jpg) no-repeat center 25%/cover;
+  background: url(assets/the-face.jpg) no-repeat center 0%/cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   flex-flow: column;
-  height: 600px;
+  height: 650px;
   padding: 30px 75px; }
   .hero nav {
     justify-content: flex-end;
     width: 100%; }
   .hero .hero-nav-link--events, .hero .hero-nav-link--get-book {
-    color: #A0B0C4;
+    color: #354354;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
     text-decoration: none; }
   .hero .hero-nav-link--events {
     padding: 0 40px 0 0; }
   .hero .section-title {
-    font-size: 3.2rem;
-    padding: 80px 0 0; }
+    color: #687D84;
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase; }
 
 .toc--book-preview {
-  width: 60%; }
+  width: 50%; }
+  .toc--book-preview .cover-wrapper {
+    margin: 0 auto;
+    width: 400px; }
+  .toc--book-preview .book-cover {
+    width: 400px; }
 
 .toc--list-section {
-  width: 40%; }
+  width: 50%; }
   .toc--list-section .section-title {
     text-align: left; }
 
@@ -297,13 +304,12 @@ footer.row {
     padding: 40px; }
 
   .hero {
-    height: 500px;
+    height: 450px;
     padding: 30px 40px; }
     .hero nav {
       display: none; }
     .hero .section-title {
-      font-size: 1.8rem;
-      padding: 80px 0 0; }
+      font-size: 1.4rem; }
 
   .toc {
     flex-flow: column; }
@@ -311,6 +317,10 @@ footer.row {
   .toc--book-preview {
     margin: 0 0 20px;
     width: 100%; }
+    .toc--book-preview .cover-wrapper {
+      width: 260px; }
+    .toc--book-preview .book-cover {
+      width: 300px; }
 
   .toc--list-section {
     width: 100%; }
