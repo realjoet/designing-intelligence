@@ -88,15 +88,33 @@ section {
     text-align: left;
   }
 
-}
+  .toc-list {
+    padding: 0 0 30px;
+  }
 
-.chapter-download-icon {
-  float: right;
+  .chapter-download-icon {
+    float: right;
 
-  &.not-available {
-    opacity: .2;
+    &.not-available {
+      opacity: .2;
+    }
   }
 }
+
+.get-book-container {
+  display: flex;
+  width: 100%;
+}
+
+.hero-nav-link--get-book {
+  background: $gun-metal;
+  border-radius: 50px;
+  color: #fff;
+  padding: 12px 20px;
+}
+
+
+
 
 
 

@@ -170,11 +170,22 @@ section {
   width: 50%; }
   .toc--list-section .section-title {
     text-align: left; }
+  .toc--list-section .toc-list {
+    padding: 0 0 30px; }
+  .toc--list-section .chapter-download-icon {
+    float: right; }
+    .toc--list-section .chapter-download-icon.not-available {
+      opacity: .2; }
 
-.chapter-download-icon {
-  float: right; }
-  .chapter-download-icon.not-available {
-    opacity: .2; }
+.get-book-container {
+  display: flex;
+  width: 100%; }
+
+.hero-nav-link--get-book {
+  background: #A0B0C4;
+  border-radius: 50px;
+  color: #fff;
+  padding: 12px 20px; }
 
 .influencers {
   justify-content: center;
@@ -308,7 +319,7 @@ footer.row {
   /* Use this to style your elements and build them in your elements.html file. When you're finished building and styling, you should be able to preview what they look and behave like, responsively. After that you can copy/paste the elements where you need them and all that needs to change is their positioning within the containing divs */
   .section-title {
     color: #A0B0C4;
-    font-family: "didonesque-roman", serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 200;
     font-size: 1.4rem;
     line-height: normal;
@@ -352,6 +363,9 @@ footer.row {
 
   .toc--list-section {
     width: 100%; }
+
+  .hero-nav-link--get-book {
+    margin: 0 auto; }
 
   .influencers .influencer-container {
     padding: 40px 0 20px; }
