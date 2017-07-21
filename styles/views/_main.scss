@@ -215,6 +215,40 @@ section {
   }
 }
 
+.event-feedback-container {
+  flex-flow: column;
+  margin: 0 auto;
+  padding: 0 0 30px;
+  width: 60%;
+}
+
+.photo-container {
+  float: left;
+  padding: 0 0 20px;
+}
+
+.photo-preview {
+  background: $dark-grey;
+  height: 60px;
+  width: 90px;
+
+  +.photo-preview {
+    margin: 0 0 0 20px;
+  }
+}
+
+.feedback-container {
+  border-left: 3px solid $dark-grey;
+  padding: 0 0 0 20px;
+}
+
+.feedback {
+  font-style: italic;
+  font-size: .9rem;
+  padding: 0 0 12px;
+  width: 80%;
+}
+
 .connect-container {
   flex-flow: row wrap;
   font-weight: 600;
