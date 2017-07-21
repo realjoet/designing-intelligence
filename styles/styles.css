@@ -227,7 +227,15 @@ section {
   .events .event.free {
     background: #D1EFF9;
     margin: 0 0 20px;
-    padding: 30px 0 30px; }
+    padding: 40px 0 40px; }
+    .events .event.free ul {
+      border-left: 3px solid #3d3d3d;
+      line-height: 40px;
+      margin: 20px 0;
+      padding: 0 0 0 20px; }
+    .events .event.free li {
+      font-size: .9rem;
+      font-weight: 600; }
   .events .event-title {
     font-weight: 600; }
   .events .event-location {
