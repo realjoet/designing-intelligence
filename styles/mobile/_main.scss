@@ -158,6 +158,13 @@ section {
   .photo-container {
     padding: 0 0 10px;
   }
+
+  .photo-preview {
+
+    +.photo-preview {
+      margin: 0 0 0 10px;
+    }
+  }
 }
 
 .feedback {

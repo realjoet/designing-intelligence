@@ -428,6 +428,8 @@ footer.row {
     width: 100%; }
     .event-feedback-container .photo-container {
       padding: 0 0 10px; }
+    .event-feedback-container .photo-preview + .photo-preview {
+      margin: 0 0 0 10px; }
 
   .feedback {
     width: 100%; }
