@@ -105,7 +105,7 @@ a {
 /* Use this to style your elements and build them in your elements.html file. When you're finished building and styling, you should be able to preview what they look and behave like, responsively. After that you can copy/paste the elements where you need them and all that needs to change is their positioning within the containing divs */
 .section-title {
   color: #A0B0C4;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'didonesque-roman';
   font-weight: 200;
   font-size: 2.4rem;
   line-height: normal;
@@ -126,7 +126,7 @@ section {
   color: #3d3d3d;
   display: flex;
   flex-flow: row wrap;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 1rem; }
 
@@ -416,6 +416,9 @@ footer.row {
     padding: 0 0 20px; }
     .events .event + .event {
       padding: 20px 0; }
+  .events .event.free li {
+    font-size: 12px;
+    font-weight: 600; }
   .events .event.free {
     padding: 30px 30px; }
   .events .event-description {
@@ -423,6 +426,8 @@ footer.row {
 
   .event-feedback-container {
     width: 100%; }
+    .event-feedback-container .photo-container {
+      padding: 0 0 10px; }
 
   .feedback {
     width: 100%; }

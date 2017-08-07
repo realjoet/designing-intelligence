@@ -129,6 +129,14 @@ section {
   }
 
   .event.free {
+
+    li {
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
+
+  .event.free {
     padding: 30px 30px;
   }
 
@@ -139,6 +147,10 @@ section {
 
 .event-feedback-container {
   width: 100%;
+
+  .photo-container {
+    padding: 0 0 10px;
+  }
 }
 
 .feedback {
