@@ -70,7 +70,7 @@ body {
   /* Set to 62.5% so that 1rem = 10pt font */
   font-size: 62.5%;
   font: inherent;
-  line-height: 23px; }
+  line-height: 28px; }
 
 ol, ul {
   list-style: none; }
@@ -108,7 +108,7 @@ a {
   font-family: 'didonesque-roman';
   font-weight: 200;
   font-size: 2.4rem;
-  line-height: normal;
+  line-height: 52px;
   padding: 0 0 10px;
   text-align: center;
   width: 100%; }
@@ -119,7 +119,7 @@ a {
   width: 60%; }
 
 section {
-  padding: 40px 75px;
+  padding: 80px 75px;
   width: 100%; }
 
 .container {
@@ -155,9 +155,10 @@ section {
 
 .hero-nav-link--get-book {
   background: #A0B0C4;
-  border-radius: 50px;
+  border-radius: 3px;
   color: #fff;
-  padding: 12px 20px; }
+  font-weight: 400;
+  padding: 15px 30px; }
 
 .about-section {
   background: #A0B0C4;
@@ -177,14 +178,14 @@ section {
   justify-content: center; }
   .influencers .influencer-container {
     justify-content: space-between;
-    padding: 40px 0;
+    padding: 60px 0 0;
     width: 100%; }
   .influencers .influencer {
     justify-content: space-around;
     width: 25%; }
   .influencers .influencer-container--inner {
     margin: 0 auto;
-    padding: 0 0 25px;
+    padding: 0 0 40px;
     width: 120px; }
   .influencers .influencer--image {
     background: url(assets/the-face.jpg) no-repeat center 25%/cover;
@@ -223,11 +224,11 @@ section {
     font-weight: 400;
     padding: 0 0 20px; }
   .events .event {
-    padding: 0 0 20px; }
+    padding: 0 0 40px; }
   .events .event.free {
     background: #D1EFF9;
-    margin: 0 0 20px;
-    padding: 40px 0 40px; }
+    margin: 0 0 40px;
+    padding: 60px 0; }
     .events .event.free ul {
       border-left: 3px solid #3d3d3d;
       line-height: 40px;
@@ -261,7 +262,7 @@ section {
 .event-feedback-container {
   flex-flow: column;
   margin: 0 auto;
-  padding: 0 0 30px;
+  padding: 0 0 60px;
   width: 60%; }
 
 .photo-container {
@@ -277,6 +278,7 @@ section {
 
 .feedback-container {
   border-left: 3px solid #3d3d3d;
+  margin: 10px 0 0;
   padding: 0 0 0 20px; }
 
 .feedback {
@@ -341,18 +343,10 @@ footer.row {
 @media (max-width: 786px) {
   /* Use this to style your elements and build them in your elements.html file. When you're finished building and styling, you should be able to preview what they look and behave like, responsively. After that you can copy/paste the elements where you need them and all that needs to change is their positioning within the containing divs */
   .section-title {
-    color: #A0B0C4;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 200;
     font-size: 1.4rem;
-    line-height: normal;
-    padding: 0 0 10px;
-    text-align: center;
-    width: 100%; }
+    line-height: 32px; }
 
   .section-description {
-    align-items: center;
-    text-align: center;
     width: 100%; }
 
   section {
@@ -369,6 +363,11 @@ footer.row {
       display: none; }
     .hero .section-title {
       font-size: 1.4rem; }
+
+  .hero-nav-link--get-book {
+    border-radius: 3px;
+    text-align: center;
+    width: 100%; }
 
   .toc {
     flex-flow: column; }
@@ -425,6 +424,7 @@ footer.row {
     width: 100%; }
 
   .event-feedback-container {
+    margin: 20px 0 0;
     width: 100%; }
     .event-feedback-container .photo-container {
       padding: 0 0 10px; }

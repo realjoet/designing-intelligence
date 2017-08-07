@@ -25,6 +25,12 @@ section {
   }
 }
 
+.hero-nav-link--get-book {
+  border-radius: 3px;
+  text-align: center;
+  width: 100%
+}
+
 
 
 
@@ -146,6 +152,7 @@ section {
 }
 
 .event-feedback-container {
+  margin: 20px 0 0;
   width: 100%;
 
   .photo-container {
